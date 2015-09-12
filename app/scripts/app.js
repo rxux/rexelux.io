@@ -19,5 +19,16 @@ angular.module('rexeluxioApp', [
     'ngTouch',
     'firebase',
     'firebase.ref',
-    'firebase.auth'
-  ]);
+    'firebase.auth',
+    'ui.router'
+  ])
+
+    .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+        $urlRouterProvider
+          .otherwise('/');
+
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
+        });
+  });

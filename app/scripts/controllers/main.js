@@ -9,9 +9,14 @@
  */
 angular.module('rexeluxioApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.awesomeThings = [];
+  })
+
+  .config(function ($stateProvider) {
+    $stateProvider
+      .state('main', {
+        url: '/',
+        templateUrl: 'app/views/main.html',
+        controller: 'MainCtrl'
+      });
   });
