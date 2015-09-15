@@ -17,8 +17,6 @@ angular.module('rexeluxioApp')
   // Adults are from REST API
   $scope.styles = Style.query();
   
- 
-  
 });
 
 

@@ -1,11 +1,4 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
 
-</div>
 
     <div ng-controller="jsonCtrl">
 
@@ -20,8 +13,13 @@
           </div>
           
           <section class="styleInfo">
+            
+            <!-- SHOW DESCRIPTION PARAGRAPHS FROM DATA -- NO HTML -->
             <p ng-repeat="description in style.descriptions">{{description}}</p>
+            <!-- CALL INCLUDE WITH CUSTOM HTML -->
+            <div ng-include src="style.view_location"></div>
           </section>
+          
 
           <!-- ONLY SHOW CODE EXAMPLES IF THEY EXIST IN DATA -->
           <pre ng-show="style.code_example != ''">{{style.code_example}}</pre>
