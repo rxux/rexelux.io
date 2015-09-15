@@ -9,7 +9,7 @@
 angular.module('rexeluxioApp')
 
   .factory('Style', function($resource) {
-  return $resource('styles/:styleId.json', {styleId: '@aid'});
+  return $resource('scripts/styles/:styleId.json', {styleId: '@aid'});
 })
 
   .controller('jsonCtrl', function ($scope, Style) {
