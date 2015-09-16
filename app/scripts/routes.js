@@ -62,6 +62,11 @@ angular.module('rexeluxioApp')
         controller: 'MainCtrl'
       })
 
+      .when('/styles/:styleId',{
+        templateUrl: '/views/style.html',
+        controller: 'StyleCtrl'
+      })
+
       .when('/chat', {
         templateUrl: 'views/chat.html',
         controller: 'ChatCtrl'

@@ -24,8 +24,6 @@ angular.module('rexeluxioApp', [
   ])
 
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-        $urlRouterProvider
-          .otherwise('/');
 
         $locationProvider.html5Mode({
             enabled: true,
