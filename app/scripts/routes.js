@@ -162,7 +162,15 @@ angular.module('rexeluxioApp')
        
     // catch all route
     // send users to the form page 
-    $urlRouterProvider.otherwise('styles');
+    $urlRouterProvider.otherwise('/styles');
+
+     // $locationProvider.html5Mode({
+     //        enabled: true,
+     //        requireBase: false
+     //    });
+
+     //$locationProvider.html5Mode(true);
+     //$locationProvider.html5Mode(true).hashPrefix('!');
 })
 
 .controller('formController', function($scope) {
