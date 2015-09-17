@@ -124,11 +124,11 @@ angular.module('rexeluxioApp')
             controller: 'jsonCtrl'
         })
       .state('main.styles', {
-            url: 'styles',
+            url: '/styles',
             templateUrl: 'views/styles.html'
         })
       .state('main.styleName', {
-            url: 'styles/:styleName',
+            url: '/styles/:styleName',
             templateUrl: 'views/style.html'
         })
 
