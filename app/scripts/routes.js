@@ -121,8 +121,7 @@ angular.module('rexeluxioApp')
 
     .state('init', {
             url: '/',
-            template: 'wow!',
-            
+            templateUrl: 'views/init.html'
         })
 
       .state('main', {
@@ -133,12 +132,27 @@ angular.module('rexeluxioApp')
       .state('main.styles', {
             url: '/all',
             templateUrl: 'views/styles.html'
+            
         })
       .state('main.styleName', {
-            url: '/:styleName',
-            templateUrl: 'views/style.html'
+            url: '/{styleName}',
+            templateUrl: 'views/style.html',
+            controller: 'StyleController'
         })
 
+        // route to show our basic chat (/chat)
+        .state('chat', {
+            url: '/chat',
+            templateUrl: 'views/chat.html',
+            controller: 'ChatCtrl'
+        })
+
+        // route to show our basic chat (/chat)
+        .state('wiki', {
+            url: '/wiki',
+            templateUrl: 'views/wiki.html',
+            controller: 'WikiController'
+        })
 
         // route to show our basic form (/form)
         .state('form', {
