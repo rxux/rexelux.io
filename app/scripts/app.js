@@ -23,10 +23,13 @@ angular.module('rexeluxioApp', [
     'ui.router'
   ])
 
-    .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+  //   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+  //       $urlRouterProvider
+  //         .otherwise('/');
 
-        $locationProvider.html5Mode({
-            enabled: true,
-            requireBase: false
-        });
-  });
+  //       $locationProvider.html5Mode({
+  //           enabled: true,
+  //           requireBase: false
+  //       });
+  // })
+;

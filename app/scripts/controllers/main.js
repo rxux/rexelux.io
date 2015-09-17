@@ -8,15 +8,16 @@
  * Controller of the rexeluxioApp
  */
 angular.module('rexeluxioApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainController', function ($scope) {
     $scope.awesomeThings = [];
   })
 
-  .config(function ($stateProvider) {
-    $stateProvider
-      .state('main', {
-        url: '/',
-        templateUrl: 'app/views/main.html',
-        controller: 'MainCtrl'
-      });
-  });
+  // .config(function ($stateProvider) {
+  //   $stateProvider
+  //     .state('main', {
+  //       url: '/',
+  //       templateUrl: 'app/views/main.html',
+  //       controller: 'MainCtrl'
+  //     });
+//  })
+;
