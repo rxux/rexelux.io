@@ -118,17 +118,24 @@ angular.module('rexeluxioApp')
 .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     
     $stateProvider
-      .state('main', {
+
+    .state('init', {
             url: '/',
+            template: 'wow!',
+            
+        })
+
+      .state('main', {
+            url: '/styles',
             templateUrl: 'views/main.html',
             controller: 'jsonCtrl'
         })
       .state('main.styles', {
-            url: '/styles',
+            url: '/all',
             templateUrl: 'views/styles.html'
         })
       .state('main.styleName', {
-            url: '/styles/:styleName',
+            url: '/:styleName',
             templateUrl: 'views/style.html'
         })
 
@@ -162,7 +169,7 @@ angular.module('rexeluxioApp')
        
     // catch all route
     // send users to the form page 
-    $urlRouterProvider.otherwise('/styles');
+    $urlRouterProvider.otherwise('/');
 
      // $locationProvider.html5Mode({
      //        enabled: true,
