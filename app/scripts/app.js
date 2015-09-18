@@ -20,7 +20,8 @@ angular.module('rexeluxioApp', [
     'firebase',
     'firebase.ref',
     'firebase.auth',
-    'ui.router'
+    'ui.router',
+    'hc.marked'
   ])
 
   //   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
