@@ -36,6 +36,8 @@ module.exports = function(config) {
       'bower_components/json3/lib/json3.js',
       'bower_components/lodash/dist/lodash.compat.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'bower_components/marked/lib/marked.js',
+      'bower_components/angular-marked/angular-marked.js',
       'bower_components/mockfirebase/browser/mockfirebase.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
