@@ -1,8 +1,10 @@
 <div ng-repeat="style in styles" ng-show="style.view_name == whichStyle">
-  <ul class="breadcrumbs">
-    <li><a ui-sref="main.styles">back</a></li>
+  <ol class="breadcrumb">
+  	<li><a ui-sref="init">home</a></li>
+    <li><a ui-sref="main.styles">styles</a></li>
+    <li><a ui-sref="main.styleName">{{style.title | lowercase}}</a></li>
     
-  </ul>
+  </ol>
   	<h2>{{style.title}}</h2>
   	<p ng-repeat="description in style.descriptions">{{description}}</p>
  	
