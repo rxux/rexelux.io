@@ -9,7 +9,7 @@
 angular.module('rexeluxioApp')
   .controller('ChatCtrl', function ($scope, Ref, $firebaseArray, $timeout) {
     // synchronize a read-only, synchronized array of messages, limit to most recent 10
-    $scope.messages = $firebaseArray(Ref.child('messages').limitToLast(10));
+    $scope.messages = $firebaseArray(Ref.child('messages').limitToLast(100));
 
     // display any errors
     $scope.messages.$loaded().catch(alert);
