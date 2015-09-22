@@ -11,7 +11,7 @@ angular.module('rexeluxioApp')
   .controller('jsonCtrl', ['$scope', '$http',  function ($scope, $http) {
     $http.get('styles.json').success(function(data) {
       $scope.styles = data;
-      $scope.totalDisplayed = 0;
+      $scope.totalDisplayed = 1;
 
       $scope.loadMore = function () {
         $scope.totalDisplayed += 1;  
