@@ -2,12 +2,12 @@
 	
 	<!-- SEARCH -->
 	<div class="col-xs-12">
-        <input ng-model="query" placeholder="enter keywords..." autofocus>
+        <input class="form-control" ng-model="query" placeholder="enter keywords..." autofocus>
 	</div>
 	
 	<!-- STYLES -->
-	<div class="col-xs-12">
-		<div class="row style" ng-repeat="style in styles | filter:{keywords:query}">
+	<div class="col-xs-12"  infinite-scroll='loadMore()' infinite-scroll-distance='1'>
+		<div class="row style" ng-repeat="style in styles | filter:{keywords:query} | limitTo: totalDisplayed" infinite-scroll="myPagingFunction()" infinite-scroll-distance="1">
 	    	<div class="col-xs-12">
 	        	<a ui-sref-active="active" class="" ui-sref="main.styleName({styleName: style.view_name})"><h2>{{style.title}}</h2></a>
 	        </div>
@@ -49,4 +49,3 @@
 
 </div>  
 
-  

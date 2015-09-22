@@ -22,7 +22,8 @@ angular.module('rexeluxioApp', [
     'firebase.auth',
     'ui.router',
     'hc.marked',
-    "hljs"
+    "hljs",
+    "infinite-scroll"
   ])
 
   .config(function (hljsServiceProvider) {

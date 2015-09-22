@@ -10,14 +10,5 @@
 angular.module('rexeluxioApp')
   .controller('MainController', function ($scope) {
     $scope.awesomeThings = [];
-  })
+  });
 
-  // .config(function ($stateProvider) {
-  //   $stateProvider
-  //     .state('main', {
-  //       url: '/',
-  //       templateUrl: 'app/views/main.html',
-  //       controller: 'MainCtrl'
-  //     });
-//  })
-;
