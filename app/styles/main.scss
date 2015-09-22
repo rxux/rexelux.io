@@ -85,10 +85,10 @@ html {
   overflow: -moz-scrollbars-none;
   overflow-y: scroll;
   body {
-    .style {
-      pre {
-        margin-top:15px;
-      }
-    }  
+    pre {
+      margin:15px 0;
+      padding:0;
+      border-width:0;
+    }
   }
 }

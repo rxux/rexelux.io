@@ -3,31 +3,19 @@
     "style_id": 1,
     "title": "Overview",
     "view_name": "overview",
-    "view_location": "views/overview.html",
+    "view_location": "/views/styles/overview.html",
     "mod_date": "14 September, 2015",    
-    "code_example": "",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "overview"
     ],
-    "custom" : {
-      "test": "test"
-    }
+    "style_markdown": "# How to use angular-md"
   },
   {
     "style_id": 2,
     "title": "Grid System",
     "view_name": "grid_system",
-    "view_location": "views/grid_system.html",
+    "view_location": "/views/styles/grid_system.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "grid system",
       "rows",
@@ -37,22 +25,14 @@
       "margin",
       "fluid",
       "width"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   }, 
   {
     "style_id": 3,    
     "title": "Typography",
     "view_name": "typography",
-    "view_location": "views/typography.html",
+    "view_location": "/views/styles/typography.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "typography",
       "type",
@@ -87,22 +67,14 @@
       "icons",
       "disabled",
       "enabled"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 4,
     "title": "Tables",
     "view_name": "tables",
-    "view_location": "views/tables.html",
+    "view_location": "/views/styles/tables.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "tables",
       "columns",
@@ -114,22 +86,14 @@
       "td",
       "tr",
       "cells"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 5,
     "title": "Forms",
     "view_name": "forms",
-    "view_location": "views/forms.html",
+    "view_location": "/views/styles/forms.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "forms",
       "input",
@@ -171,22 +135,14 @@
       "warning",
       "error",
       "size"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 6,    
     "title": "Buttons",
     "view_name": "buttons",
-    "view_location": "views/buttons.html",
+    "view_location": "/views/styles/buttons.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "buttons",
       "a",
@@ -207,22 +163,14 @@
       "disabled",
       "enabled",
       "active"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 7,
     "title": "Images",
     "view_name": "images",
-    "view_location": "views/images.html",
+    "view_location": "/views/styles/images.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "images",
       "responsive images",
@@ -230,22 +178,14 @@
       "zoom",
       "img",
       "thumbnails"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 8,
     "title": "Helper Classes",
     "view_name": "helper_classes",
-    "view_location": "views/helper_classes.html",
+    "view_location": "/views/styles/helper_classes.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "helper classes",
       "text color",
@@ -267,22 +207,14 @@
       "screen reader",
       "image replacement",
       "hidden text"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 9,    
     "title": "Responsive Utilities",
     "view_name": "responsive_utilities",
-    "view_location": "views/responsive_utilities.html",
+    "view_location": "/views/styles/responsive_utilities.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "responsive utilities",
       "visibility",
@@ -292,22 +224,14 @@
       "inline-block",
       "inline",
       "print"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 10,
     "title": "Dropdowns",
     "view_name": "dropdowns",
-    "view_location": "views/dropdowns.html",
+    "view_location": "/views/styles/dropdowns.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "dropdowns",
       "toggle",
@@ -319,42 +243,26 @@
       "mobile",
       "fly-in",
       "popup"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 11,
     "title": "Breadcrumbs",
     "view_name": "breadcrumbs",
-    "view_location": "views/breadcrumbs.html",
+    "view_location": "/views/styles/breadcrumbs.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "breadcrumbs",
       "path",
       "hierarchy"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 12,    
     "title": "Pagination",
     "view_name": "pagination",
-    "view_location": "views/pagination.html",
+    "view_location": "/views/styles/pagination.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "pagination",
       "page",
@@ -362,42 +270,26 @@
       "previous",
       "current",
       "active"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 13,
     "title": "Badges",
     "view_name": "badges",
-    "view_location": "views/badges.html",
+    "view_location": "/views/styles/badges.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "badges",
       "count",
       "number"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 14,
     "title": "Alerts",
     "view_name": "alerts",
-    "view_location": "views/alerts.html",
+    "view_location": "/views/styles/alerts.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "alerts",
       "warning",
@@ -405,120 +297,69 @@
       "info",
       "success",
       "dismissible"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 15,    
     "title": "Progress Bars",
     "view_name": "progress_bars",
-    "view_location": "views/progress_bars.html",
+    "view_location": "/views/styles/progress_bars.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "progress bars",
       "process",
       "striped",
       "animated"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 16,
     "title": "Tooltips",
     "view_name": "tooltips",
-    "view_location": "views/tooltips.html",
+    "view_location": "/views/styles/tooltips.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "tooltips"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 17,
     "title": "Accordions",
     "view_name": "accordions",
-    "view_location": "views/accordions.html",
+    "view_location": "/views/styles/accordions.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "accordions"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 18,    
     "title": "Tabs",
     "view_name": "tabs",
-    "view_location": "views/tabs.html",
+    "view_location": "/views/styles/tabs.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "tabs"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 19,    
     "title": "Modals",
     "view_name": "modals",
-    "view_location": "views/modals.html",
+    "view_location": "/views/styles/modals.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "modals"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   },
   {
     "style_id": 20,    
     "title": "Media Queries",
     "view_name": "media_queries",
-    "view_location": "views/media_queries.html",
+    "view_location": "/views/styles/media_queries.html",
     "mod_date": "14 September, 2015",
-    "code_example": "<div>code example</div>",
-    "descriptions": [
-      "paragraph 1",
-      "paragraph 2"
-    ], 
     "keywords": [
       "media queries"
-    ],
-    "custom" : {
-      "test": "test"
-    }
+    ]
   }
 ]

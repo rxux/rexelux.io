@@ -21,6 +21,7 @@ module.exports = function(config) {
       // bower:js
       'bower_components/es5-shim/es5-shim.js',
       'bower_components/jquery/dist/jquery.js',
+      'bower_components/highlightjs/highlight.pack.js',
       'bower_components/angular/angular.js',
       'bower_components/firebase/firebase.js',
       'bower_components/angularfire/dist/angularfire.js',
@@ -38,6 +39,7 @@ module.exports = function(config) {
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/marked/lib/marked.js',
       'bower_components/angular-marked/angular-marked.js',
+      'bower_components/angular-highlightjs/build/angular-highlightjs.js',
       'bower_components/mockfirebase/browser/mockfirebase.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower

@@ -21,16 +21,13 @@ angular.module('rexeluxioApp', [
     'firebase.ref',
     'firebase.auth',
     'ui.router',
-    'hc.marked'
+    'hc.marked',
+    "hljs"
   ])
 
-  //   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
-  //       $urlRouterProvider
-  //         .otherwise('/');
-
-  //       $locationProvider.html5Mode({
-  //           enabled: true,
-  //           requireBase: false
-  //       });
-  // })
-;
+  .config(function (hljsServiceProvider) {
+    hljsServiceProvider.setOptions({
+      // replace tab with 4 spaces
+      tabReplace: '    '
+    });
+});
