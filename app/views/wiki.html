@@ -1,32 +1,28 @@
 <div class="row">
+
 	<div class="col-xs-9">
 		<h2>Rexel UX Wiki</h2>
-
-
 		<form>
-		  Markdown:<br />
-		  <textarea ng-model="wikis[0].article_markdown" cols="60" rows="5" class="span8"></textarea><br />
-		  Output:<br />
-		  <div marked="wikis[0].article_markdown" />
+		  <label for="markdown"><h3>Markdown:</h3></label>
+		  <textarea name="markdown" ng-model="wikis[0].article_markdown" cols="60" rows="5" class="span8 form-control"></textarea>
+		  <label for="output"><h3>Output:</h3></label>
+		  <div name="output" marked="wikis[0].article_markdown"></div>
 		</form>
-
-
-
-
 	</div>
+
 	<div class="col-xs-3">
 		<div class="panel panel-default">
 			<div class="panel-heading">Contents</div>
 			<div class="panel-body">
 				<input class="form-control" ng-model="wikiSearch" placeholder="enter keywords..." autofocus>
 			</div>
-				<ul class="list-group">
-					<li ng-repeat="wiki in wikis | filter:{title:wikiSearch} | limitTo:10" class="list-group-item">
-						<a ui-sref="wiki">{{wiki.title}}</a>
-					</li>
-				</ul>
-			
+			<ul class="list-group">
+				<li ng-repeat="wiki in wikis | filter:{title:wikiSearch} | limitTo:10" class="list-group-item">
+					<a ui-sref="wiki">{{wiki.title}}</a>
+				</li>
+			</ul>
 		</div>
 	</div>
+
 </div>
 
