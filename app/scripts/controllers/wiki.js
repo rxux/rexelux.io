@@ -6,5 +6,6 @@ angular.module('rexeluxioApp')
     $http.get('wiki.json').success(function(data) {
       $scope.wikis = data;
     });
- 
+    $scope.templates =
+    [ { name: 'wiki_home', url: 'wiki_home.html'} ];
 }]);

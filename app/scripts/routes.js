@@ -119,44 +119,60 @@ angular.module('rexeluxioApp')
     
     $stateProvider
 
-    .state('init', {
+    .state('home', {
             url: '/',
-            templateUrl: 'views/init.html'
+            templateUrl: 'views/home.html',
+            ncyBreadcrumb: {
+              label: 'home'
+            }
         })
-
-      .state('main', {
+      .state('styles', {
             url: '/styles',
-            templateUrl: 'views/main.html',
-            controller: 'jsonCtrl'
-        })
-      .state('main.styles', {
-            url: '/all',
-            templateUrl: 'views/styles.html'
+            templateUrl: 'views/styles.html',
+            controller: 'jsonCtrl',
+            ncyBreadcrumb: {
+              label: 'style guide',
+              parent: 'home'
+            }
             
         })
-      .state('main.styleName', {
+      .state('styles.styleName', {
             url: '/{styleName}',
             templateUrl: 'views/style.html',
-            controller: 'StyleController'
+            controller: 'StyleController',
+            ncyBreadcrumb: {
+              label: '{{whichStyle}}'
+            }
         })
 
         // route to show our basic chat (/chat)
         .state('chat', {
             url: '/chat',
             templateUrl: 'views/chat.html',
-            controller: 'ChatCtrl'
+            controller: 'ChatCtrl',
+            ncyBreadcrumb: {
+              label: 'chat',
+              parent: 'home'
+            }
         })
 
         // route to show our basic wiki (/wiki)
         .state('wiki', {
             url: '/wiki',
             templateUrl: 'views/wiki.html',
-            controller: 'WikiController'
+            controller: 'WikiController',
+            ncyBreadcrumb: {
+              label: 'wiki',
+              parent: 'home'
+            }
         })
         .state('wiki.articleName', {
             url: '/{articleName}',
             templateUrl: 'views/wiki_article.html',
-            controller: 'WikiArticleController'
+            controller: 'WikiArticleController',
+            ncyBreadcrumb: {
+              label: '{{whichArticle}}'
+            }
         })
 
         // route to show our basic form (/form)

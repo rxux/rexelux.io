@@ -23,7 +23,8 @@ angular.module('rexeluxioApp', [
     'ui.router',
     'hc.marked',
     "hljs",
-    "infinite-scroll"
+    "infinite-scroll",
+    "ncy-angular-breadcrumb"
   ])
 
   .config(function (hljsServiceProvider) {

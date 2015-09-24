@@ -23,7 +23,8 @@
     "angular-marked": "0.0.21",
     "angular-md": "1.0.0",
     "angular-highlightjs": "^0.4.3",
-    "ngInfiniteScroll": "^1.0.0"
+    "ngInfiniteScroll": "^1.0.0",
+    "angular-breadcrumb": "^0.4.1"
 
   },
   "devDependencies": {

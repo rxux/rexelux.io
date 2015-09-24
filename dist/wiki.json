@@ -1,11 +1,5 @@
 [
   {
-    "article_id": 0,
-    "title": "Introduction",
-    "article_name": "Introduction",
-    "article_markdown": "*This* **is** [markdown](https://daringfireball.net/projects/markdown/)"
-  },
-  {
     "article_id": 1,
     "title": "Github",
     "article_name": "github",
