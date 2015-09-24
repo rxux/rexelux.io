@@ -1,0 +1,8 @@
+<div ng-repeat="wiki in wikis" ng-show="wiki.article_name == whichArticle">
+  <ol class="breadcrumb">
+  	<li><a ui-sref="init">home</a></li>
+	<li><a ui-sref="wiki">wiki</a></li>
+	<li><a ui-sref="wiki.articleName">{{wiki.article_name}}</a></li>
+  </ol>
+	{{wiki.title}}
+  </div>

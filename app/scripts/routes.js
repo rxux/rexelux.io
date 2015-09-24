@@ -147,11 +147,16 @@ angular.module('rexeluxioApp')
             controller: 'ChatCtrl'
         })
 
-        // route to show our basic chat (/chat)
+        // route to show our basic wiki (/wiki)
         .state('wiki', {
             url: '/wiki',
             templateUrl: 'views/wiki.html',
             controller: 'WikiController'
+        })
+        .state('wiki.articleName', {
+            url: '/{articleName}',
+            templateUrl: 'views/wiki_article.html',
+            controller: 'WikiArticleController'
         })
 
         // route to show our basic form (/form)
