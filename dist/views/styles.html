@@ -1,6 +1,5 @@
-<span ui-view></span>
-<a id="return-to-top" scroll-to-item scroll-to="#top">^</a><div class="row">
-	
+<a id="return-to-top" scroll-to-item scroll-to="#top"></a><div class="row">
+<span ui-view>
 	<!-- SEARCH -->
 	<div class="col-xs-12">
         <input class="form-control" ng-model="query" placeholder="enter keywords..." autofocus>
@@ -9,8 +8,8 @@
 	<!-- STYLES -->
 	<div class="col-xs-12" infinite-scroll="loadMore()" infinite-scroll-distance="1">
 		<div class="row style" ng-repeat="style in styles | filter:{keywords:query} | limitTo: totalDisplayed" infinite-scroll="myPagingFunction()" infinite-scroll-distance="1">
-	    	<div class="col-xs-12">
-	        	<a ui-sref-active="active" class="" ui-sref="styles.styleName({styleName: style.view_name})"><h2>{{style.title}}</h2></a>
+	    	<div class="col-xs-12" ng-init="index = styles.indexOf(style) ++1">
+	        	<a ui-sref-active="active" ng-click="setPageNumber(index)" ui-sref="styles.styleName({styleName: style.view_name})"><h2>{{style.title}}</h2></a>
 	        </div>
 	        
 	        <div class="col-xs-12">
@@ -48,4 +47,5 @@
     	</div>
 	</div>
 
-</div>
+</span></div>  
+

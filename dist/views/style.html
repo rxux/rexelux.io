@@ -1,4 +1,5 @@
-<div ng-repeat="style in styles" ng-show="style.view_name == whichStyle">
-  	<h2>{{style.title}}</h2>
+<div ng-repeat="style in styles | filter:whichStyle | limitTo:1">
+
+  	<h1>{{style.title}}</h1>
  	<div ng-include src="style.view_location"></div>
 </div>

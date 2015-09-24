@@ -4,13 +4,6 @@
 		<span ui-view>
 			<div ng-include src="'views/wiki_intro.html'"></div>
 		</span>
-		
-		<!-- <form>
-		  <label for="markdown"><h3>Markdown:</h3></label>
-		  <textarea name="markdown" ng-model="wikis[0].article_markdown" cols="60" rows="5" class="span8 form-control"></textarea>
-		  <label for="output"><h3>Output:</h3></label>
-		  <div name="output" marked="wikis[0].article_markdown"></div>
-		</form> -->
 	</div>
 
 
@@ -19,7 +12,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">Contents</div>
 			<div class="panel-body">
-				<input class="form-control" ng-model="wikiSearch" placeholder="enter keywords..." autofocus>
+				<input class="form-control" ng-model="wikiSearch" placeholder="enter article name..." autofocus>
 			</div>
 			<ul class="list-group">
 				<li ng-repeat="wiki in wikis | filter:{title:wikiSearch} | limitTo:99" class="list-group-item">

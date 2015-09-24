@@ -3,30 +3,43 @@
     "article_id": 1,
     "title": "Github",
     "article_name": "github",
-    "article_markdown": "*This* **is** [markdown](https://daringfireball.net/projects/markdown/)"
+    "article_location": "/views/articles/github.html",
+    "article_mod_date": "September 24, 2015",
+    "article_last_editor": "Rich Sollenne"
   },
   {
     "article_id": 2,
     "title": "Amazon (AWS) Integration",
     "article_name": "aws",
-    "article_markdown": "*This* **is** [markdown](https://daringfireball.net/projects/markdown/)"
+    "article_location": "/views/articles/aws.html",
+    "article_mod_date": "September 24, 2015",
+    "article_last_editor": "Rich Sollenne"  
   },
   {
     "article_id": 3,
     "title": "Wiki",
     "article_name": "wiki",
-    "article_markdown": "*This* **is** [markdown](https://daringfireball.net/projects/markdown/)"
+    "article_location": "/views/articles/wiki.html",
+    "article_mod_date": "September 24, 2015",
+    "article_last_editor": "Rich Sollenne"
   },
   {
     "article_id": 4,
     "title": "Resources",
     "article_name": "resources",
-    "article_markdown": "*This* **is** [markdown](https://daringfireball.net/projects/markdown/)"
+    "article_location": "/views/articles/resources.html",
+    "article_mod_date": "September 24, 2015",
+    "article_last_editor": "Rich Sollenne"
   },
   {
     "article_id": 5,
     "title": "Markdown",
     "article_name": "markdown",
+    "article_location": "/views/articles/markdown.html",
+    "article_mod_date": "September 24, 2015",
+    "article_last_editor": "Rich Sollenne",
     "article_markdown": "*This* **is** [markdown](https://daringfireball.net/projects/markdown/)"
   }
 ]
+    
+ 
