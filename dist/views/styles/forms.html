@@ -595,39 +595,7 @@
 </hljs>
 
 
-  <h2 id="forms-control-readonly">Readonly state</h2>
-  <p>Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.</p>
-  <div class="bs-example" data-example-id="readonly-text-form-control">
-    <form>
-      <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-    </form>
-  </div><!-- /.bs-example -->
-<hljs language="xml">
-<input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-</hljs>
-
-
-  <h2 id="forms-help-text">Help text</h2>
-  <p>Block level help text for form controls.</p>
-  <div class="bs-callout bs-callout-info" id="callout-help-text-accessibility">
-    <h4>Associating help text with form controls</h4>
-    <p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.</p>
-  </div>
-  <div class="bs-example" data-example-id="simple-help-text">
-    <form>
-      <div class="form-group">
-        <label for="inputHelpBlock">Input with help text</label>
-        <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
-      </div>
-      <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-    </form>
-  </div><!-- /.bs-example -->
-<hljs language="xml">
-<label class="sr-only" for="inputHelpBlock">Input with help text</label>
-<input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
-...
-<span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-</hljs>
+  
 
 
 

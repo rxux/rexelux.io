@@ -273,18 +273,6 @@
     ]
   },
   {
-    "style_id": 13,
-    "title": "Badges",
-    "view_name": "badges",
-    "view_location": "/views/styles/badges.html",
-    "mod_date": "14 September, 2015",
-    "keywords": [
-      "badges",
-      "count",
-      "number"
-    ]
-  },
-  {
     "style_id": 14,
     "title": "Alerts",
     "view_name": "alerts",
@@ -297,19 +285,6 @@
       "info",
       "success",
       "dismissible"
-    ]
-  },
-  {
-    "style_id": 15,    
-    "title": "Progress Bars",
-    "view_name": "progress_bars",
-    "view_location": "/views/styles/progress_bars.html",
-    "mod_date": "14 September, 2015",
-    "keywords": [
-      "progress bars",
-      "process",
-      "striped",
-      "animated"
     ]
   },
   {
@@ -350,16 +325,6 @@
     "mod_date": "14 September, 2015",
     "keywords": [
       "modals"
-    ]
-  },
-  {
-    "style_id": 20,    
-    "title": "Media Queries",
-    "view_name": "media_queries",
-    "view_location": "/views/styles/media_queries.html",
-    "mod_date": "14 September, 2015",
-    "keywords": [
-      "media queries"
     ]
   }
 ]
