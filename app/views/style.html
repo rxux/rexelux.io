@@ -1,6 +1,7 @@
-<div ng-repeat="style in styles | filter:whichStyle | limitTo:1">
+<div class="col-xs-12" ng-repeat="style in styles | filter:whichStyle | limitTo:1">
 
   	<h1>{{style.title}}</h1>
+  	<hr>
  	<div ng-include src="style.view_location"></div>
 </div>
   

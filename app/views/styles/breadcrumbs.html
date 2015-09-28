@@ -1,24 +1,24 @@
 <!-- BREADCRUMBS -->
-<p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
-  <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
+  <p>Breadcrumbs are added via <code>ul</code> with a class of <code>breadcrumb</code>.</p>
+  <p>The breadcrumbs are displayed in a light gray text seperated by a forward slash <code>/</code>. The bread crumbs are rendered at the same size of all our <code>small</code> text, which is a <code>font-size</code> of <code>0.9em</code> or approximately <code>12px</code>. Breadcrumb <code>font-weight</code> is normal (<code>400</code>) with the exception of the current, or 'active' breadcrumb, which has a <code>font-weight</code> of <code>500</code> or 'semibold'.</p>
   <div class="bs-example" data-example-id="simple-breadcrumbs">
-    <ol class="breadcrumb">
+    <ul class="breadcrumb">
       <li class="active">Home</li>
-    </ol>
-    <ol class="breadcrumb">
-      <li><a href="#">Home</a></li>
+    </ul>
+    <ul class="breadcrumb">
+      <li><a href="">Home</a></li>
       <li class="active">Library</li>
-    </ol>
-    <ol class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Library</a></li>
+    </ul>
+    <ul class="breadcrumb">
+      <li><a href="">Home</a></li>
+      <li><a href="">Library</a></li>
       <li class="active">Data</li>
-    </ol>
+    </ul>
   </div>
 <hljs language="xml">
-<ol class="breadcrumb">
+<ul class="breadcrumb">
   <li><a href="#">Home</a></li>
   <li><a href="#">Library</a></li>
   <li class="active">Data</li>
-</ol>
+</ul>
 </hljs>

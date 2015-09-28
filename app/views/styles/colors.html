@@ -1,0 +1,70 @@
+<!-- COLORS -->
+<p>colors section - opening statement here</p>
+<div class="row">
+	<div class="col-xs-12">
+		<h2>Global Greyscale Colors</h2>
+		<p>info here</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_greyscale">
+		<div class="card">
+			<div class="color {{color.class}}-bg"> </div>
+			<h3>{{color.name}}</h3>
+			<p>{{color.usage}}</p>
+			<hljs language="css" source="color.hex"> </hljs>
+		</div>
+	</div>
+	
+	<div class="col-xs-12">
+		<h2>Global Indicator Colors</h2>
+		<p>info here</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_indicator">
+		<div class="card">
+			<div class="color {{color.class}}-bg"> </div>
+			<h3>{{color.name}}</h3>
+			<p>{{color.usage}}</p>
+			<hljs language="css" source="color.hex"> </hljs>
+		</div>
+	</div>
+
+	<div class="col-xs-12">
+		<h2>Global Various Colors</h2>
+		<p>info here</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_other">
+		<div class="card">
+			<div class="color {{color.class}}-bg"> </div>
+			<h3>{{color.name}}</h3>
+			<p>{{color.usage}}</p>
+			<hljs language="css" source="color.hex"> </hljs>
+		</div>
+	</div>
+	
+	<div class="col-xs-12">
+		<h2>Rexel Colors</h2>
+		<p>info here</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_rexel">
+		<div class="card">
+			<div class="color {{color.class}}-bg"> </div>
+			<h3>{{color.name}}</h3>
+			<p>{{color.usage}}</p>
+			<hljs language="css" source="color.hex"> </hljs>
+		</div>
+	</div>
+	
+	<div class="col-xs-12">
+		<h2>Hagemeyer Colors</h2>
+		<p>info here</p>
+	</div>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_hagemeyer">
+		<div class="card">
+			<div class="color {{color.class}}-bg"> </div>
+			<h3>{{color.name}}</h3>
+			<p>{{color.usage}}</p>
+			<hljs language="css" source="color.hex"> </hljs>
+		</div>
+	</div>
+
+</div>
+

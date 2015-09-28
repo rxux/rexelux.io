@@ -1,6 +1,6 @@
 [
   {
-    "style_id": 1,
+    "style_id": 0,
     "title": "Overview",
     "view_name": "overview",
     "view_location": "/views/styles/overview.html",
@@ -9,6 +9,146 @@
       "overview"
     ], 
     "style_markdown": "# How to use angular-md"
+  },
+  {
+    "style_id": 1,
+    "title": "Colors",
+    "view_name": "colors",
+    "view_location": "/views/styles/colors.html",
+    "mod_date": "14 September, 2015",
+    "keywords": [
+      "colors"
+    ],
+    "colors_greyscale": {
+      "rx-white": {
+        "name": "Primary White",
+        "hex": "#ffffff",
+        "class": "rx-white",
+        "usage": "lorem ipsum."
+      },
+      "rx-lt-grey": {
+        "name": "Light Grey",
+        "hex": "#dadada",
+        "class": "rx-lt-grey",
+        "usage": "lorem ipsum."
+      },
+      "rx-md-grey": {
+        "name": "Medium Grey",
+        "hex": "#f5f5f5",
+        "class": "rx-md-grey",
+        "usage": "lorem ipsum."
+      },
+      "rx-dk-grey": {
+        "name": "Dark Grey",
+        "hex": "#58585a",
+        "class": "rx-dk-grey",
+        "usage": "Primarily used as our global text-color accross the site."
+      }
+    },
+    "colors_indicator": {
+      "rx-ind-red": {
+        "name": "Alert Red",
+        "hex": "#d95553",
+        "class": "rx-ind-red",
+        "usage": "lorem ipsum."
+      },
+      "rx-ind-yellow": {
+        "name": "Warning Yellow",
+        "hex": "#efad58",
+        "class": "rx-ind-yellow",
+        "usage": "lorem ipsum."
+      },
+      "rx-ind-green": {
+        "name": "Success Green",
+        "hex": "#007b34",
+        "class": "rx-ind-green",
+        "usage": "lorem ipsum."
+      },
+      "rx-ind-blue": {
+        "name": "Info Blue",
+        "hex": "#066cb6",
+        "class": "rx-ind-blue",
+        "usage": "Primarily used as our global text-color accross the site."
+      }
+    },
+    "colors_other": {
+      "rx-white": {
+        "name": "Primary White",
+        "hex": "#ffffff",
+        "class": "rx-white",
+        "usage": "lorem ipsum."
+      },
+      "rx-lt-grey": {
+        "name": "Light Grey",
+        "hex": "#dadada",
+        "class": "rx-lt-grey",
+        "usage": "lorem ipsum."
+      },
+      "rx-md-grey": {
+        "name": "Medium Grey",
+        "hex": "#f5f5f5",
+        "class": "rx-md-grey",
+        "usage": "lorem ipsum."
+      },
+      "rx-dk-grey": {
+        "name": "Dark Grey",
+        "hex": "#58585a",
+        "class": "rx-dk-grey",
+        "usage": "Primarily used as our global text-color accross the site."
+      }
+    },
+    "colors_rexel": {
+      "rx-white": {
+        "name": "Primary White",
+        "hex": "#ffffff",
+        "class": "rx-white",
+        "usage": "lorem ipsum."
+      },
+      "rx-lt-grey": {
+        "name": "Light Grey",
+        "hex": "#dadada",
+        "class": "rx-lt-grey",
+        "usage": "lorem ipsum."
+      },
+      "rx-md-grey": {
+        "name": "Medium Grey",
+        "hex": "#f5f5f5",
+        "class": "rx-md-grey",
+        "usage": "lorem ipsum."
+      },
+      "rx-dk-grey": {
+        "name": "Dark Grey",
+        "hex": "#58585a",
+        "class": "rx-dk-grey",
+        "usage": "Primarily used as our global text-color accross the site."
+      }
+    },
+    "colors_hagemeyer": {
+      "rx-white": {
+        "name": "Primary White",
+        "hex": "#ffffff",
+        "class": "rx-white",
+        "usage": "lorem ipsum."
+      },
+      "rx-lt-grey": {
+        "name": "Light Grey",
+        "hex": "#dadada",
+        "class": "rx-lt-grey",
+        "usage": "lorem ipsum."
+      },
+      "rx-md-grey": {
+        "name": "Medium Grey",
+        "hex": "#f5f5f5",
+        "class": "rx-md-grey",
+        "usage": "lorem ipsum."
+      },
+      "rx-dk-grey": {
+        "name": "Dark Grey",
+        "hex": "#58585a",
+        "class": "rx-dk-grey",
+        "usage": "Primarily used as our global text-color accross the site."
+      }
+    }
   },
   {
     "style_id": 2,
