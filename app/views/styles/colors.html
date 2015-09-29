@@ -1,6 +1,8 @@
 <!-- COLORS -->
-<p>colors section - opening statement here</p>
+<p>There are several HTML and default Rexel elements that will automatically have colors applied (e.g; buttons, links, text, inputs, etc.). If an element does not have a default style, this section can be used to find the acceptable class or color hex-value.</p>
 <div class="row">
+
+	<!-- GREYSCALE -->
 	<div class="col-xs-12">
 		<h2>Global Greyscale Colors</h2>
 		<p>info here</p>
@@ -14,20 +16,27 @@
 		</div>
 	</div>
 	
+	<!-- INDICATOR -->
 	<div class="col-xs-12">
 		<h2>Global Indicator Colors</h2>
-		<p>info here</p>
+		<p>These Colors are used only when we need to indicate something of importance to the customer about our services or products. etc. You will see these colors most often on product pages with our Indicator Icons. Each Indicator color has a both a lighter and darker hue that can be used only in conjuction with the indicator color. There are some elements that use the other shades for miscellaneous purposes. These colors should not be called on their own but are available with the customary class names.</p>
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_indicator">
 		<div class="card">
 			<div class="color {{color.class}}-bg"> </div>
+			<div class="color-family">
+				<div class="hex-lt {{color.class}}-lt-bg"><code>{{color.hex_lt}}</code></div>
+				<div class="hex-dk {{color.class}}-dk-bg"><code>{{color.hex_dk}}</code></div>
+			</div>
+			<div class="clearfix"></div>
 			<h3>{{color.name}}</h3>
 			<p>{{color.usage}}</p>
 			<hljs language="css" source="color.hex"> </hljs>
 		</div>
 	</div>
-
-	<div class="col-xs-12">
+	
+	<!-- OTHER -->
+	<!-- <div class="col-xs-12">
 		<h2>Global Various Colors</h2>
 		<p>info here</p>
 	</div>
@@ -38,13 +47,19 @@
 			<p>{{color.usage}}</p>
 			<hljs language="css" source="color.hex"> </hljs>
 		</div>
-	</div>
+	</div> -->
 	
+	<!-- REXEL -->
 	<div class="col-xs-12">
-		<h2>Rexel Colors</h2>
+		<hr>
+		<h2>Brand Colors</h2>
+		
+	</div>
+	<div class="col-xs-12">
+		<h3>Rexel USA Color Pallete</h3>
 		<p>info here</p>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_rexel">
+	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="color in style.colors_rexel">
 		<div class="card">
 			<div class="color {{color.class}}-bg"> </div>
 			<h3>{{color.name}}</h3>
@@ -53,11 +68,12 @@
 		</div>
 	</div>
 	
+	<!-- HAGEMEYER -->
 	<div class="col-xs-12">
-		<h2>Hagemeyer Colors</h2>
+		<h3>Hagemeyer Color Pallete</h3>
 		<p>info here</p>
 	</div>
-	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_hagemeyer">
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-repeat="color in style.colors_hagemeyer">
 		<div class="card">
 			<div class="color {{color.class}}-bg"> </div>
 			<h3>{{color.name}}</h3>

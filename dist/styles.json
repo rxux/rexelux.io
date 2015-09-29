@@ -24,7 +24,7 @@
         "name": "Primary White",
         "hex": "#ffffff",
         "class": "rx-white",
-        "usage": "lorem ipsum."
+        "usage": "Used for backgrounds and text when on dark backgrounds."
       },
       "rx-lt-grey": {
         "name": "Light Grey",
@@ -49,26 +49,34 @@
       "rx-ind-red": {
         "name": "Alert Red",
         "hex": "#d95553",
+        "hex_lt": "#efc8c8",
+        "hex_dk": "#b72b28",
         "class": "rx-ind-red",
-        "usage": "lorem ipsum."
+        "usage": "Used to show errors that must be corrected to continue. Anything that may halt the user-flow."
       },
       "rx-ind-yellow": {
         "name": "Warning Yellow",
         "hex": "#efad58",
+        "hex_lt": "#fadfbd",
+        "hex_dk": "#e58a16",
         "class": "rx-ind-yellow",
-        "usage": "lorem ipsum."
+        "usage": "Used to advise the user of a potential error or conflict. Does not halt user-flow."
       },
       "rx-ind-green": {
         "name": "Success Green",
         "hex": "#007b34",
+        "hex_lt": "#e6f9ee",
+        "hex_dk": "#006229",
         "class": "rx-ind-green",
-        "usage": "lorem ipsum."
+        "usage": "Used to show an action has executed successfully or the following action will be successful."
       },
       "rx-ind-blue": {
         "name": "Info Blue",
         "hex": "#066cb6",
+        "hex_lt": "#e2f3ff",
+        "hex_dk": "#044f85",
         "class": "rx-ind-blue",
-        "usage": "Primarily used as our global text-color accross the site."
+        "usage": "Used to show informational or contextual information. Does not affect user-flow or actions."
       }
     },
     "colors_other": {
@@ -98,55 +106,37 @@
       }
     },
     "colors_rexel": {
-      "rx-white": {
-        "name": "Primary White",
-        "hex": "#ffffff",
-        "class": "rx-white",
+      "rx-blue": {
+        "name": "Rexel Primary Blue",
+        "hex": "#2a3e87",
+        "class": "rx-blue",
         "usage": "lorem ipsum."
       },
-      "rx-lt-grey": {
-        "name": "Light Grey",
-        "hex": "#dadada",
-        "class": "rx-lt-grey",
+      "rx-lt-blue": {
+        "name": "Rexel Light Blue",
+        "hex": "#4487bd",
+        "class": "rx-lt-blue",
         "usage": "lorem ipsum."
       },
-      "rx-md-grey": {
-        "name": "Medium Grey",
-        "hex": "#f5f5f5",
-        "class": "rx-md-grey",
+      "rx-orange": {
+        "name": "Rexel Orange",
+        "hex": "#ee7803",
+        "class": "rx-orange",
         "usage": "lorem ipsum."
-      },
-      "rx-dk-grey": {
-        "name": "Dark Grey",
-        "hex": "#58585a",
-        "class": "rx-dk-grey",
-        "usage": "Primarily used as our global text-color accross the site."
       }
     },
     "colors_hagemeyer": {
-      "rx-white": {
-        "name": "Primary White",
-        "hex": "#ffffff",
-        "class": "rx-white",
+      "hgm-blue": {
+        "name": "Hagemeyer Blue",
+        "hex": "#0068b4",
+        "class": "hgm-blue",
         "usage": "lorem ipsum."
       },
-      "rx-lt-grey": {
-        "name": "Light Grey",
-        "hex": "#dadada",
-        "class": "rx-lt-grey",
+      "hgm-orange": {
+        "name": "Hagemeyer Orange",
+        "hex": "#f39100",
+        "class": "hgm-orange",
         "usage": "lorem ipsum."
-      },
-      "rx-md-grey": {
-        "name": "Medium Grey",
-        "hex": "#f5f5f5",
-        "class": "rx-md-grey",
-        "usage": "lorem ipsum."
-      },
-      "rx-dk-grey": {
-        "name": "Dark Grey",
-        "hex": "#58585a",
-        "class": "rx-dk-grey",
-        "usage": "Primarily used as our global text-color accross the site."
       }
     }
   },
