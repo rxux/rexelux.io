@@ -178,6 +178,16 @@ html {
   }
   .color {
     height:75px;
+    padding:9px;
+    code {
+      background:none;
+      color:#fff;
+    }
+  }
+  .color.rx-white-bg code,
+  .color.rx-lt-grey-bg code,
+  .color.rx-md-grey-bg code {
+    color:#58585a;
   }
 
   .hljs {

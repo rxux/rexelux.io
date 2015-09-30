@@ -9,10 +9,9 @@
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_greyscale">
 		<div class="card">
-			<div class="color {{color.class}}-bg"> </div>
+			<div class="color {{color.class}}-bg"><code>{{color.hex}}</code></div>
 			<h3>{{color.name}}</h3>
 			<p>{{color.usage}}</p>
-			<hljs language="css" source="color.hex"> </hljs>
 		</div>
 	</div>
 	
@@ -23,7 +22,7 @@
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="color in style.colors_indicator">
 		<div class="card">
-			<div class="color {{color.class}}-bg"> </div>
+			<div class="color {{color.class}}-bg"><code>{{color.hex}}</code></div>
 			<div class="color-family">
 				<div class="hex-lt {{color.class}}-lt-bg"><code>{{color.hex_lt}}</code></div>
 				<div class="hex-dk {{color.class}}-dk-bg"><code>{{color.hex_dk}}</code></div>
@@ -31,7 +30,6 @@
 			<div class="clearfix"></div>
 			<h3>{{color.name}}</h3>
 			<p>{{color.usage}}</p>
-			<hljs language="css" source="color.hex"> </hljs>
 		</div>
 	</div>
 	
@@ -49,22 +47,22 @@
 		</div>
 	</div> -->
 	
-	<!-- REXEL -->
+	<!-- BRAND COLORS -->
 	<div class="col-xs-12">
 		<hr>
 		<h2>Brand Colors</h2>
-		
 	</div>
+
+	<!-- REXEL -->
 	<div class="col-xs-12">
 		<h3>Rexel USA Color Pallete</h3>
 		<p>info here</p>
 	</div>
 	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="color in style.colors_rexel">
 		<div class="card">
-			<div class="color {{color.class}}-bg"> </div>
+			<div class="color {{color.class}}-bg"><code>{{color.hex}}</code></div>
 			<h3>{{color.name}}</h3>
 			<p>{{color.usage}}</p>
-			<hljs language="css" source="color.hex"> </hljs>
 		</div>
 	</div>
 	
@@ -75,11 +73,24 @@
 	</div>
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-repeat="color in style.colors_hagemeyer">
 		<div class="card">
-			<div class="color {{color.class}}-bg"> </div>
+			<div class="color {{color.class}}-bg"><code>{{color.hex}}</code></div>
 			<h3>{{color.name}}</h3>
 			<p>{{color.usage}}</p>
-			<hljs language="css" source="color.hex"> </hljs>
 		</div>
+	</div>
+
+	<div class="col-xs-12">
+		<hr>
+		<h2>Other Colors</h2>
+		<p>There are very few other colors available to use. </p>
+		<h3>Gradients</h3>
+		<p>rx-secondary-btn</p>
+		<h3>Opacity</h3>
+		<ul>
+			<li><p>disabled states</p></li>
+			<li><p>modal backdrops</p></li>
+			<li><p>placeholder text</p></li>
+		</ul>
 	</div>
 
 </div>
