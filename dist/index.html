@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/css/jquery.mmenu.all.min.css">
 
     <link rel="stylesheet" href="styles/main.e15ffd85.css">
+
+
   </head>
   <body id="hagemeyer" ng-app="rexeluxioApp" ng-cloak ng-controller="MainController">
-      <ng-include src="'includes/mmenu.html'"></ng-include>
-      <ng-include src="'includes/header.html'"></ng-include>
+      <ng-include src="'views/partials/mmenu.html'"></ng-include>
+      <ng-include src="'views/partials/header.html'"></ng-include>
       <div class="page-content">
         <div ncy-breadcrumb></div>
         <div class="wrapper" ui-view></div>
-        <ng-include src="'includes/footer.html'"></ng-include>
-        <ng-include src="'includes/google_analytics.html'"></ng-include>
+        <ng-include src="'views/partials/footer.html'"></ng-include>
+        <ng-include src="'views/partials/google_analytics.html'"></ng-include>
       </div>
 
 
