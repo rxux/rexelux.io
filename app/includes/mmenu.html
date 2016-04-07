@@ -1,0 +1,25 @@
+<nav id="menu" mmenu>
+
+    <ul>
+
+        <li contentful-entry="'3Xwkb7HYqswa8oMo0kYk0q'">
+            <a href="/">{{ $contentfulEntry.fields.title }}</a>
+        </li>
+
+        <ul contentful-entries="'content_type=article'">
+            <li ng-repeat="category in $contentfulEntries.items">
+                {{ category.fields.title }}
+            </li>
+        </ul>
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About us</a>
+            <ul>
+                <li><a href="/about/history">History</a></li>
+                <li><a href="/about/team">The team</a></li>
+                <li><a href="/about/address">Our address</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>

@@ -8,7 +8,7 @@
  * Controller of the rexeluxioApp
  */
 angular.module('rexeluxioApp')
-  .controller('MainController', function ($scope) {
-    $scope.siteTitle = 'E-Commerce Style Guide';
+  .controller('footerCtrl', function ($scope) {
+    $scope.date = new Date();
   });
 
