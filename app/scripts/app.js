@@ -46,4 +46,34 @@ angular.module('rexeluxioApp', [
                 $(element).mmenu({});
             }
         }
-    });
+    })
+
+    .directive('hamburger', function() {
+    return {
+        restrict: 'A',
+        link: function (scope, element) {
+            var API = $("#menu").data( "mmenu" );
+            var Blocker = $('#mm-blocker');
+
+            $(element).click(function() {
+                if ($(this).hasClass('active')) {
+                    API.close();
+                    $(element).removeClass('active');
+                } else {
+                    $(element).addClass('active');
+                }
+            });
+
+            Blocker.click(function() {
+                if ($(element).hasClass('active')) {
+                    API.close();
+                    $(element).removeClass('active');
+                }
+            });
+
+            API.bind( "closed", function() {
+                API.closeAllPanels();
+            });
+        }
+    }
+});

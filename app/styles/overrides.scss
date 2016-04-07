@@ -43,6 +43,7 @@ body {
       position:relative;
       display:block;
       margin: 15px 5px;
+      cursor: pointer;
 
       .line {
         display:block;
@@ -78,7 +79,8 @@ body {
           -moz-transform: translateY($height-line / 2);
         }
       }
-      &.active {
+
+      html.mm-opening & {
         .line-1 {
           transform: translateY($translateY) translateX($translateX) rotate($rotation);
           -webkit-transform: translateY($translateY) translateX($translateX) rotate($rotation);
