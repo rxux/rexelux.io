@@ -1,7 +1,0 @@
-<div ng-repeat="wiki in wikis" ng-show="wiki.article_name == whichArticle">
-  
-	<h2>{{wiki.title}}</h2>
-	<p>{{wiki.article_last_editor}} last edited this article on {{wiki.article_mod_date}}.</p>
-	<hr>
-	<div ng-include src="wiki.article_location"></div>
-  </div>
