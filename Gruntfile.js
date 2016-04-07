@@ -238,6 +238,7 @@ module.exports = function (grunt) {
     filerev: {
       dist: {
         src: [
+          '<%= yeoman.dist %>/includes/{,*/}*.html',
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
@@ -377,6 +378,7 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             '*.json',
+            'includes/{,*/}*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
             'styles/fonts/{,*/}*.*'
