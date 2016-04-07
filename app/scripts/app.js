@@ -17,19 +17,33 @@ angular.module('rexeluxioApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'firebase',
-    'firebase.ref',
-    'firebase.auth',
     'ui.router',
     'hc.marked',
     "hljs",
     "infinite-scroll",
-    "ncy-angular-breadcrumb"
+    "ncy-angular-breadcrumb",
+    "contentful"
   ])
 
   .config(function (hljsServiceProvider) {
-    hljsServiceProvider.setOptions({
-      // replace tab with 4 spaces
-      tabReplace: '    '
+      hljsServiceProvider.setOptions({
+          // replace tab with 4 spaces
+          tabReplace: '    '
+      });
+  })
+
+  .config(function(contentfulProvider){
+    contentfulProvider.setOptions({
+        space: 'd9ue08nhxkkm',
+        accessToken: '7c18b3ed7eb6b7e20633fb2f12919c13358a1176fa52fe0ee551a2a690022da9'
     });
-});
+})
+
+    .directive('mmenu', function() {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attrs) {
+                $(element).mmenu({});
+            }
+        }
+    });

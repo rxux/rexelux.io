@@ -8,20 +8,42 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/highlightjs/styles/rainbow.css" />
+    <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css" />
     <!-- endbower -->
     <!-- endbuild -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/css/jquery.mmenu.all.min.css">
+
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
   <body ng-app="rexeluxioApp">
+
+
     <div class="viewport">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+
+      <!-- Side Menu -->
+      <nav id="menu" mmenu>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About us</a>
+            <ul>
+              <li><a href="/about/history">History</a></li>
+              <li><a href="/about/team">The team</a></li>
+              <li><a href="/about/address">Our address</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
       <div class="header" ng-cloak="">
+
+
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -40,15 +62,7 @@
 
               <ul class="nav navbar-nav">
                 <li><a ui-sref="styles">Style Guide</a></li>
-                <!-- //angularfire -->
-                <li><a ui-sref="chat">Chat</a></li>
-                <li><a ui-sref="form.profile">Form</a></li>
-                <li><a ui-sref="wiki">Wiki</a></li>
-                <li>
-                <!-- <a ng-hide-auth="" href="/login">log in</a> -->
-                <a ng-show-auth="" href="/account">account</a>
-              </li>
-
+                <li><a class="navbar-brand" href="#menu"><b>menu</b></a></li>
               </ul>
             </div>
           </div>
@@ -102,27 +116,22 @@
     <script src="bower_components/angular-highlightjs/build/angular-highlightjs.js"></script>
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
     <script src="bower_components/angular-breadcrumb/release/angular-breadcrumb.js"></script>
+    <script src="bower_components/angular-contentful/dist/angular-contentful.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/js/jquery.mmenu.min.all.min.js"></script>
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/wiki.js"></script>
-        <script src="scripts/controllers/wiki_article.js"></script>
         <script src="scripts/controllers/styles.js"></script>
         <script src="scripts/controllers/style.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/angularfire/config.js"></script>
-        <script src="scripts/angularfire/firebase.ref.js"></script>
-        <script src="scripts/controllers/chat.js"></script>
         <script src="scripts/filters/reverse.js"></script>
-        <script src="scripts/angularfire/auth.js"></script>
-        <script src="scripts/controllers/login.js"></script>
-        <script src="scripts/controllers/account.js"></script>
-        <script src="scripts/directives/ngShowAuth.js"></script>
-        <script src="scripts/directives/ngHideAuth.js"></script>
-
         <script src="scripts/routes.js"></script>
         <!-- endbuild -->
+
+  <pre contentful-entry="'3Xwkb7HYqswa8oMo0kYk0q'">
+  {{ $contentfulEntry.fields.title }}
+</pre>
 </body>
 </html>

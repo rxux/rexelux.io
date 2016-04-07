@@ -42,6 +42,7 @@ module.exports = function(config) {
       'bower_components/angular-highlightjs/build/angular-highlightjs.js',
       'bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
       'bower_components/angular-breadcrumb/release/angular-breadcrumb.js',
+      'bower_components/angular-contentful/dist/angular-contentful.js',
       'bower_components/mockfirebase/browser/mockfirebase.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
