@@ -25,8 +25,8 @@
   <body id="hagemeyer" ng-app="rexeluxioApp" ng-cloak ng-controller="MainController">
       <ng-include src="'views/partials/mmenu.html'"></ng-include>
       <ng-include src="'views/partials/header.html'"></ng-include>
-      <div class="page-content">
-        <div ncy-breadcrumb></div>
+      <div class="page-content" >
+        <div ncy-breadcrumb ng-show='showBreadcrumbs'></div>
         <div class="wrapper" ui-view></div>
         <ng-include src="'views/partials/footer.html'"></ng-include>
         <ng-include src="'views/partials/google_analytics.html'"></ng-include>

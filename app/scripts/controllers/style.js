@@ -8,12 +8,14 @@
  */
 angular.module('rexeluxioApp')
 	
-  .controller('StyleController', ['$scope', '$http', '$stateParams',  function($scope, $http, $stateParams) {
+  .controller('StyleController', ['$scope', '$http', '$stateParams',  function($scope, $http, $stateParams, $location) {
     $http.get('styles.json').success(function(data) {
       $scope.styles = data;
 
       $scope.whichStyle = $stateParams.styleName;
     });
+
+      $scope.currentPath = $location.path();
 
     
 

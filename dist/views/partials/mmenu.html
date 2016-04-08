@@ -1,7 +1,8 @@
 <nav id="menu" mmenu>
 
     <ul contentful-entries="'content_type=category'">
-        <li ng-repeat="category in $contentfulEntries.items">
+        <li><a ui-sref="home">Home</a></li>
+        <li ng-repeat="category in $contentfulEntries.items | orderBy:'fields.weight'">
             <a href="#">{{ category.fields.name }}</a>
         </li>
     </ul>

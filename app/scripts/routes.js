@@ -122,10 +122,12 @@ angular.module('rexeluxioApp')
     .state('home', {
             url: '/',
             templateUrl: 'views/home.html',
+            module: 'home',
             ncyBreadcrumb: {
               label: 'home'
             }
         })
+
       .state('styles', {
             url: '/styles',
             templateUrl: 'views/styles.html',

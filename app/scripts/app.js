@@ -31,15 +31,28 @@ angular.module('rexeluxioApp', [
           tabReplace: '    '
       });
   })
-
   .config(function(contentfulProvider){
     contentfulProvider.setOptions({
         space: 'd9ue08nhxkkm',
         accessToken: '7c18b3ed7eb6b7e20633fb2f12919c13358a1176fa52fe0ee551a2a690022da9'
     });
 })
+  .run([
+    '$rootScope','$location','$state','$stateParams',/*'$templateCache',*/
+    function (
 
-    .directive('mmenu', function() {
+        $rootScope,   $location,  $state,  $stateParams/*,  $templateCache*/  ) {
+
+        $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+
+            if (toState.module === 'home') {
+                $rootScope.showBreadcrumbs = false;
+            } else {
+                $rootScope.showBreadcrumbs = true;
+            };
+        });
+    }])
+  .directive('mmenu', function() {
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
@@ -47,11 +60,10 @@ angular.module('rexeluxioApp', [
             }
         }
     })
-
-    .directive('hamburger', function() {
+  .directive('hamburger', function() {
     return {
         restrict: 'A',
-        link: function (scope, element) {
+        link: function (scope, element, attrs) {
             var API = $("#menu").data( "mmenu" );
             var Blocker = $('#mm-blocker');
 
@@ -64,13 +76,12 @@ angular.module('rexeluxioApp', [
                 }
             });
 
-            Blocker.click(function() {
+            $('#mm-blocker').click(function() {
                 if ($(element).hasClass('active')) {
                     API.close();
                     $(element).removeClass('active');
                 }
             });
-
             API.bind( "closed", function() {
                 API.closeAllPanels();
             });
