@@ -54,29 +54,38 @@ angular.module('rexeluxioApp', [
     }])
   .directive('mmenu', function() {
         return {
+            scope: true,
             restrict: 'A',
-            link: function (scope, element, attrs) {
-                $(element).mmenu({});
+            link: function ($scope, element, attrs) {
+                $scope.$watch('entries', function() {
+                    $(element).mmenu({});
+                })
+
             }
         }
     })
+
+
+
+
   .directive('hamburger', function() {
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
             var API = $("#menu").data( "mmenu" );
             var Blocker = $('#mm-blocker');
-
+            API.init( $("#mmenu-list"));
             $(element).click(function() {
                 if ($(this).hasClass('active')) {
                     API.close();
                     $(element).removeClass('active');
                 } else {
+                    API.init( $("#mmenu-list"));
                     $(element).addClass('active');
                 }
             });
 
-            $('#mm-blocker').click(function() {
+            Blocker.click(function() {
                 if ($(element).hasClass('active')) {
                     API.close();
                     $(element).removeClass('active');

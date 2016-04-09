@@ -1,0 +1,14 @@
+<!--<ul contentful-entries="'content_type=category'">-->
+    <!--<li><a ui-sref="home">Home</a></li>-->
+    <!--<li ng-repeat="category in $contentfulEntries.items | orderBy:'fields.weight'">-->
+        <!--<a ui-sref="categories">{{ category.fields.name }}</a>-->
+    <!--</li>-->
+<!--</ul>-->
+
+
+
+<ul ui-view>
+    <li ng-repeat="category in entries | orderBy:'fields.weight'" ng-if="category.sys.contentType.sys.id == 'category'">
+        <a ui-sref="categories.catName({catName: category.fields.name})">{{ category.fields.name }}</a>
+    </li>
+</ul>

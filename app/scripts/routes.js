@@ -128,6 +128,27 @@ angular.module('rexeluxioApp')
             }
         })
 
+        .state('categories', {
+            url: '/categories',
+            templateUrl: 'views/categories.html',
+            controller: 'CategoryController',
+            ncyBreadcrumb: {
+                label: 'categories',
+                parent: 'home'
+            },
+
+        })
+
+        .state('categories.catName', {
+            url: '/{catName}',
+            templateUrl: 'views/category.html',
+            controller: 'CategoryController',
+            ncyBreadcrumb: {
+                label: '{{whichCat}}'
+            },
+
+        })
+
       .state('styles', {
             url: '/styles',
             templateUrl: 'views/styles.html',
@@ -157,6 +178,6 @@ angular.module('rexeluxioApp')
      //        requireBase: false
      //    });
 
-     $locationProvider.html5Mode(true);
+     // $locationProvider.html5Mode(true);
      //$locationProvider.html5Mode(true).hashPrefix('!');
 });
