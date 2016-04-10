@@ -1,1 +1,41 @@
-Top Level Category Template
+<div class="container-fluid cat-pages">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="cat-title">{{ whichCat }}</h1>
+                <br>
+                <!--<h2>{{ whichSubCat }}</h2>-->
+            </div>
+            <div class="col-xs-12">
+                <!-- Nav tabs -->
+
+
+
+                    <span ng-repeat="category in entries | orderBy:'fields.weight'" ng-if="category.fields.name == whichCat">
+                        <uib-tabset ng-if="category.fields.subcategories.length > 0">
+                            <uib-tab ng-if="category.fields.name == whichCat" ng-repeat="subcat in category.fields.subcategories | orderBy:'fields.weight'" ui-sref-active="active" heading="{{subcat}}" ui-sref="categories.catDetail({catName:category.fields.name, subCatName: subcat })">
+
+                                <div ng-repeat="entry in entries" ng-hide="entry.fields.subcategory.length < 0" ng-if="entry.fields.subcategory == whichSubCat">
+
+                                    <!--UNCOMMENT BELOW TO SEE JSON OBJECT-->
+                                    <!--<pre>{{ entry | json }}</pre>-->
+
+                                    <br><br>
+                                    <h2>{{ entry.fields.name }}</h2>
+                                    <h2>Last Updated: {{ entry.sys.updatedAt | date: 'longDate' }} by {{ entry.fields.lastEditedBy }}</h2>
+                                    <div>{{ entry.fields.body }}</div>
+                                    <div>{{ entry.fields.codepen }}</div>
+                                    <hr>
+                                </div>
+
+                            </uib-tab>
+                        </uib-tabset>
+                    </span>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>

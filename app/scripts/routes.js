@@ -141,10 +141,21 @@ angular.module('rexeluxioApp')
 
         .state('categories.catName', {
             url: '/{catName}',
-            templateUrl: 'views/category.html',
+            templateUrl: 'views/category_no_tabs.html',
             controller: 'CategoryController',
             ncyBreadcrumb: {
                 label: '{{whichCat}}'
+            },
+
+        })
+
+        .state('categories.catDetail', {
+            url: '/{catName}/{subCatName}',
+            templateUrl: 'views/category.html',
+            controller: 'CategoryController',
+            ncyBreadcrumb: {
+                label: '{{whichSubCat}}',
+                parent: 'categories.catName'
             },
 
         })

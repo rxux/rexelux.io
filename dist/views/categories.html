@@ -9,6 +9,7 @@
 
 <ul ui-view>
     <li ng-repeat="category in entries | orderBy:'fields.weight'" ng-if="category.sys.contentType.sys.id == 'category'">
-        <a ui-sref="categories.catName({catName: category.fields.name})">{{ category.fields.name }}</a>
+        <a ui-sref="categories.catDetail({catName: category.fields.name, subCatName: category.fields.subcategories[0] })">
+            {{ category.fields.name }}</a>
     </li>
 </ul>

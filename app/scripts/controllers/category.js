@@ -10,6 +10,7 @@
 angular.module('rexeluxioApp')
   .controller('CategoryController', function ($scope, $stateParams) {
       $scope.whichCat = $stateParams.catName;
+      $scope.whichSubCat = $stateParams.subCatName;
 
 
   });
