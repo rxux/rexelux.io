@@ -91,7 +91,6 @@ angular.module('rexeluxioApp', [
         link: function (scope, element, attrs) {
             var API = $("#menu").data( "mmenu" );
             var Blocker = $('#mm-blocker');
-            API.init( $("#mmenu-list"));
             $(element).click(function() {
                 if ($(this).hasClass('active')) {
                     API.close();
