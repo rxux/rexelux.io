@@ -1,4 +1,3 @@
-
 <div class="row-fluid">
 <div class="col-md-4">
   <h3>Profile</h3>
@@ -6,17 +5,17 @@
   <form role="form">
     <p class="form-group">
       <label>Account ID</label>
-      <br />{{user.uid}}
+      <br>{{user.uid}}
     </p>
 
     <p class="form-group">
       <label>Name:</label>
-      <input type="text" name="name" ng-model="profile.name" class="form-control" />
+      <input type="text" name="name" ng-model="profile.name" class="form-control">
     </p>
 
     <p class="form-group">
       <label>Email:</label>
-      <br />{{profile.email}}
+      <br>{{profile.email}}
     </p>
   </form>
 
@@ -31,17 +30,17 @@
 
   <p class="form-group">
     <label>Old Password:</label>
-    <input type="password" ng-keypress="clear()" ng-model="oldpass" class="form-control" />
+    <input type="password" ng-keypress="clear()" ng-model="oldpass" class="form-control">
   </p>
 
   <p class="form-group">
     <label>New Password:</label>
-    <input type="password" ng-keypress="clear()" ng-model="newpass" class="form-control" />
+    <input type="password" ng-keypress="clear()" ng-model="newpass" class="form-control">
   </p>
 
   <p class="form-group">
     <label>Confirm New Password:</label>
-    <input type="password" ng-keypress="clear()" ng-model="confirm" class="form-control" />
+    <input type="password" ng-keypress="clear()" ng-model="confirm" class="form-control">
   </p>
 
   <button class="btn btn-primary" ng-click="changePassword(oldpass, newpass, confirm)">change password</button>
@@ -57,12 +56,12 @@
 
   <p class="form-group">
     <label>New Email:</label>
-    <input type="text" ng-keypress="clear()" ng-model="newEmail" class="form-control" />
+    <input type="text" ng-keypress="clear()" ng-model="newEmail" class="form-control">
   </p>
 
   <p class="form-group">
     <label>Password:</label>
-    <input type="password" ng-keypress="clear()" ng-model="pass" class="form-control" />
+    <input type="password" ng-keypress="clear()" ng-model="pass" class="form-control">
   </p>
 
   <button class="btn btn-primary" ng-click="changeEmail(pass, newEmail)">update email</button>

@@ -13,15 +13,9 @@
 
                     <span ng-repeat="category in entries | orderBy:'fields.weight'" ng-if="category.fields.name == whichCat">
                         <uib-tabset ng-if="category.fields.subcategories.length > 0">
-                            <uib-tab  ng-if="category.fields.name == whichCat"
-                                    ng-repeat="subcat in category.fields.subcategories | orderBy:'fields.weight'"
-                                    ui-sref-active="active"
-                                    heading="{{subcat}}"
-                                    ui-sref="categories.catDetail({catName:category.fields.name, subCatName: subcat })">
+                            <uib-tab ng-if="category.fields.name == whichCat" ng-repeat="subcat in category.fields.subcategories | orderBy:'fields.weight'" ui-sref-active="active" heading="{{subcat}}" ui-sref="categories.catDetail({catName:category.fields.name, subCatName: subcat })">
 
-                                <div ng-repeat="entry in entries"
-                                     ng-hide="entry.fields.subcategory.length < 0"
-                                     ng-if="entry.fields.subcategory != whichSubCat">
+                                <div ng-repeat="entry in entries" ng-hide="entry.fields.subcategory.length < 0" ng-if="entry.fields.subcategory != whichSubCat">
 
                                     <!--UNCOMMENT BELOW TO SEE JSON OBJECT-->
                                     <!--<pre>{{ entry | json }}</pre>-->
