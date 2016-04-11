@@ -46,7 +46,8 @@ angular.module('rexeluxioApp', [
             // Allow same origin resource loads.
             'self',
             // Allow loading from our assets domain.  Notice the difference between * and **.
-            'http://codepen.io/**']);
+            '*://codepen.io/**',
+            '*://assets.codepen.io/**']);
     })
   .run([
     '$rootScope','$location','$state','$stateParams',/*'$templateCache',*/
