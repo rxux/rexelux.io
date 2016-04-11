@@ -49,6 +49,11 @@ angular.module('rexeluxioApp', [
             '*://codepen.io/**',
             '*://assets.codepen.io/**']);
     })
+    .filter('trustUrl', function ($sce) {
+        return function(url) {
+            return $sce.trustAsResourceUrl(url);
+        };
+    })
   .run([
     '$rootScope','$location','$state','$stateParams',/*'$templateCache',*/
     function (

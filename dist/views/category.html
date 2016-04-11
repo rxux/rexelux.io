@@ -37,7 +37,7 @@
                                     <div class="iiMdPreview" text="{{entry.fields.body}}">
                                     <br>
                                     <div>
-                                        <iframe height="{{ entry.fields.codepenHeight }}" scrolling="yes" ng-src="{{ entry.fields.codepen }}" frameborder="yes" allowtransparency="true" allowfullscreen style="width: 100%">
+                                        <iframe height="{{ entry.fields.codepenHeight }}" scrolling="yes" ng-src="{{ entry.fields.codepen | trustUrl}}" frameborder="yes" allowtransparency="true" allowfullscreen style="width: 100%">
                                         </iframe>
                                     </div>
                                     <br><br>

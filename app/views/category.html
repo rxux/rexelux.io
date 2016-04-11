@@ -45,7 +45,7 @@
                                     <br>
                                     <div>
                                         <iframe height='{{ entry.fields.codepenHeight }}' scrolling='yes'
-                                                ng-src='{{ entry.fields.codepen }}' frameborder='yes'
+                                                ng-src='{{ entry.fields.codepen | trustUrl}}' frameborder='yes'
                                                 allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
                                         </iframe>
                                     </div>
