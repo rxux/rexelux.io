@@ -141,10 +141,26 @@ body {
     top:50px;
   }
   .cat-pages {
-    h1.cat-title {
+    h1,h2 {
       font-weight:300;
       letter-spacing:0.025em;
     }
+    .entry {
+      h2.entry-title {
+        margin:0;
+      }
+      hr.first-hr {
+        margin-top:6px;
+      }
+      .edited-info {
+        position:relative;
+        top:6px;
+      }
+      textarea.MdPreview-markdown {
+        display:none;
+      }
+    }
+
   }
   footer {
     background-color: #f5f5f1;

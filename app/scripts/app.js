@@ -23,7 +23,9 @@ angular.module('rexeluxioApp', [
     "infinite-scroll",
     "ncy-angular-breadcrumb",
     "contentful",
-    "ui.bootstrap"
+    "ui.bootstrap",
+    "embedCodepen",
+    "evgenyneu.markdown-preview"
   ])
 
   .config(function (hljsServiceProvider) {
@@ -32,12 +34,20 @@ angular.module('rexeluxioApp', [
           tabReplace: '    '
       });
   })
+
   .config(function(contentfulProvider){
     contentfulProvider.setOptions({
         space: 'd9ue08nhxkkm',
         accessToken: '7c18b3ed7eb6b7e20633fb2f12919c13358a1176fa52fe0ee551a2a690022da9'
     });
 })
+    .config(function($sceDelegateProvider) {
+        $sceDelegateProvider.resourceUrlWhitelist([
+            // Allow same origin resource loads.
+            'self',
+            // Allow loading from our assets domain.  Notice the difference between * and **.
+            'http://codepen.io/**']);
+    })
   .run([
     '$rootScope','$location','$state','$stateParams',/*'$templateCache',*/
     function (
