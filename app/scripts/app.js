@@ -46,8 +46,8 @@ angular.module('rexeluxioApp', [
             // Allow same origin resource loads.
             'self',
             // Allow loading from our assets domain.  Notice the difference between * and **.
-            '*://codepen.io/**',
-            '*://assets.codepen.io/**']);
+            'http://codepen.io/**',
+            'http://assets.codepen.io/**']);
     })
     .filter('trustUrl', function ($sce) {
         return function(url) {
