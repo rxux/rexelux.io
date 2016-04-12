@@ -89,26 +89,26 @@ angular.module('rexeluxioApp', [
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
-            var API = $("#menu").data( "mmenu" );
+            //ar API = $("#menu").data( "mmenu" );
             var Blocker = $('#mm-blocker');
             $(element).click(function() {
                 if ($(this).hasClass('active')) {
-                    API.close();
+                    $("#menu").data( "mmenu" ).close();
                     $(element).removeClass('active');
                 } else {
-                    API.init( $("#mmenu-list"));
+                    $("#menu").data( "mmenu" ).init( $("#mmenu-list"));
                     $(element).addClass('active');
                 }
             });
 
             Blocker.click(function() {
                 if ($(element).hasClass('active')) {
-                    API.close();
+                    $("#menu").data( "mmenu" ).close();
                     $(element).removeClass('active');
                 }
             });
-            API.bind( "closed", function() {
-                API.closeAllPanels();
+            $("#menu").data( "mmenu" ).bind( "closed", function() {
+                $("#menu").data( "mmenu" ).closeAllPanels();
             });
         }
     }
