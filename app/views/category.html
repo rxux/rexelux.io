@@ -43,18 +43,17 @@
                                     <hr class="first-hr">
                                     <div class='iiMdPreview' text='{{entry.fields.body}}'></div>
                                     <br>
-                                    <div class="codepen">
-                                        <iframe
-                                                height='{{ entry.fields.codepenHeight }}'
+                                    <div>
+                                        <iframe height='{{ entry.fields.codepenOptions[0] }}'
                                                 scrolling='no'
-                                                ng-src='{{ entry.fields.codepen }}'
+                                                ng-src='{{ entry.fields.codepenOptions[1] }}'
                                                 frameborder='no'
                                                 allowtransparency='true'
                                                 allowfullscreen='true'
                                                 style='width: 100%;'>
                                         </iframe>
                                     </div>
-                                    <br><br>
+                                    <br>
                                     <hr>
                                 </div>
 
