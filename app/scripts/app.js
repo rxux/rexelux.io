@@ -107,9 +107,6 @@ angular.module('rexeluxioApp', [
                     $(element).removeClass('active');
                 }
             });
-            $("#menu").data( "mmenu" ).bind( "closed", function() {
-                $("#menu").data( "mmenu" ).closeAllPanels();
-            });
         }
     }
 });
