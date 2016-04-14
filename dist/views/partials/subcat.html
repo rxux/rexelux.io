@@ -1,0 +1,38 @@
+<div class="container-fluid cat-pages">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" infinite-scroll="loadMore()" infinite-scroll-distance="0">
+                <div class="row entry" ng-repeat="entry in entries | orderBy:'fields.weight' | limitTo: totalDisplayed" ng-if="entry.fields.subcategory == whichSubCat">
+                    <div class="col-xs-12" ng-init="index = entries.indexOf(entry) ++1">
+
+                        <div style="min-height:300px">
+                            <!--UNCOMMENT BELOW TO SEE JSON OBJECT-->
+                            <!--<pre>{{ entry | json }}</pre>-->
+                            <br><br><br>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6">
+                                    <h2 class="entry-title">{{ entry.fields.name | uppercase }}</h2>
+                                </div>
+                                <div class="col-xs-12 col-sm-6">
+                                    <small class="pull-right text-muted edited-info">
+                                        Last
+                                        Updated {{
+                                        entry.sys.updatedAt | date: 'longDate' }} by {{ entry.fields.lastEditedBy }}
+                                    </small>
+                                </div>
+                            </div>
+                            <hr class="first-hr">
+                            <div class="iiMdPreview" text="{{entry.fields.body}}"></div>
+                            <br>
+                            <div>
+                                <iframe height="{{ entry.fields.codepenOptions[0] }}" scrolling="no" ng-src="{{ entry.fields.codepenOptions[1] }}" frameborder="no" allowtransparency="true" allowfullscreen style="width: 100%">
+                                </iframe>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

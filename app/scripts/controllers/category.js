@@ -11,6 +11,11 @@ angular.module('rexeluxioApp')
   .controller('CategoryController', function ($scope, $stateParams) {
       $scope.whichCat = $stateParams.catName;
       $scope.whichSubCat = $stateParams.subCatName;
+      $scope.totalDisplayed = 1;
+
+      $scope.loadMore = function () {
+          $scope.totalDisplayed += 1;
+      };
 
 
   });

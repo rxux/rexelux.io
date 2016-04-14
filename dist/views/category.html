@@ -15,33 +15,6 @@
                         <uib-tabset class="tab-animation" ng-if="category.fields.subcategories.length > 0">
                             <uib-tab ng-if="category.fields.name == whichCat" ng-repeat="subcat in category.fields.subcategories | orderBy:'fields.weight'" ui-sref-active="active" heading="{{subcat}}" ui-sref="categories.catDetail({catName:category.fields.name, subCatName: subcat })">
 
-                                <div class="entry" ng-repeat="entry in entries" ng-hide="entry.fields.subcategory.length < 0" ng-if="entry.fields.subcategory == whichSubCat">
-
-                                    <!--UNCOMMENT BELOW TO SEE JSON OBJECT-->
-                                    <!--<pre>{{ entry | json }}</pre>-->
-
-                                    <br><br><br>
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h2 class="entry-title">{{ entry.fields.name | uppercase }}</h2>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <small class="pull-right text-muted edited-info">
-                                                Last
-                                        Updated {{
-                                        entry.sys.updatedAt | date: 'longDate' }} by {{ entry.fields.lastEditedBy }}
-                                            </small>
-                                        </div>
-                                    </div>
-                                    <hr class="first-hr">
-                                    <div class="iiMdPreview" text="{{entry.fields.body}}"></div>
-                                    <br>
-                                    <div>
-                                        <iframe height="{{ entry.fields.codepenOptions[0] }}" scrolling="no" ng-src="{{ entry.fields.codepenOptions[1] }}" frameborder="no" allowtransparency="true" allowfullscreen style="width: 100%">
-                                        </iframe>
-                                    </div>
-                                    <br>
-                                </div>
 
                             </uib-tab>
                         </uib-tabset>
@@ -54,3 +27,4 @@
         </div>
     </div>
 </div>
+<ng-include src="'/views/partials/subcat.html'"></ng-include>
