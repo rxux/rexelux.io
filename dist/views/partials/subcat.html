@@ -24,6 +24,71 @@
                             <hr class="first-hr">
                             <div class="iiMdPreview" text="{{entry.fields.body}}"></div>
                             <br>
+                            <div class="info info-{{entry.fields.infoTagA}}" ng-if="entry.fields.infoTagA">
+                                <div class="row">
+                                    <div class="col-xs-2 title-wrapper">
+                                        <div class="title">
+                                            <span class="i-wrap">
+                                                <i class="material-icons hybris">&#xE322;</i>
+                                                <i class="material-icons link">&#xE157;</i>
+                                                <i class="material-icons warning">&#xE000;</i>
+                                                <i class="material-icons info">&#xE88E;</i>
+                                                <i class="material-icons code">&#xE86F;</i>
+                                                <i class="material-icons note">&#xE06F;</i>
+                                                <i class="material-icons deprecated">&#xE8E3;</i>
+                                                <i class="material-icons mobile">&#xE325;</i>
+                                                <i class="material-icons tablet">&#xE331;</i>
+                                                <i class="material-icons desktop">&#xE30B;</i>
+                                            </span>
+                                            <strong>{{entry.fields.infoTagA}}</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-10 text iiMdPreview" text="{{entry.fields.infoTextA}}"></div>
+                                </div>
+                            </div>
+                            <div class="info info-{{entry.fields.infoTagB}}" ng-if="entry.fields.infoTagB">
+                                <div class="row">
+                                    <div class="col-xs-2 title">
+                                        <span class="i-wrap">
+                                            <i class="material-icons hybris">&#xE322;</i>
+                                            <i class="material-icons link">&#xE157;</i>
+                                            <i class="material-icons warning">&#xE000;</i>
+                                            <i class="material-icons info">&#xE88E;</i>
+                                            <i class="material-icons code">&#xE86F;</i>
+                                            <i class="material-icons note">&#xE06F;</i>
+                                            <i class="material-icons deprecated">&#xE8E3;</i>
+                                            <i class="material-icons mobile">&#xE325;</i>
+                                            <i class="material-icons tablet">&#xE331;</i>
+                                            <i class="material-icons desktop">&#xE30B;</i>
+                                        </span>
+                                        <strong>{{entry.fields.infoTagB}}</strong>
+                                    </div>
+                                    <div class="col-xs-10 text iiMdPreview" text="{{entry.fields.infoTextB}}"></div>
+                                </div>
+                            </div>
+                            <div class="info info-{{entry.fields.infoTagC}}" ng-if="entry.fields.infoTagC">
+                                <div class="row">
+                                    <div class="col-xs-2 title">
+                                        <span class="i-wrap">
+                                            <i class="material-icons hybris">&#xE322;</i>
+                                            <i class="material-icons link">&#xE157;</i>
+                                            <i class="material-icons warning">&#xE000;</i>
+                                            <i class="material-icons info">&#xE88E;</i>
+                                            <i class="material-icons code">&#xE86F;</i>
+                                            <i class="material-icons note">&#xE06F;</i>
+                                            <i class="material-icons deprecated">&#xE8E3;</i>
+                                            <i class="material-icons mobile">&#xE325;</i>
+                                            <i class="material-icons tablet">&#xE331;</i>
+                                            <i class="material-icons desktop">&#xE30B;</i>
+                                        </span>
+                                        <strong>{{entry.fields.infoTagC}}</strong>
+                                    </div>
+                                    <div class="col-xs-10 text iiMdPreview" text="{{entry.fields.infoTextC}}"></div>
+                                </div>
+                            </div>
+                            <br>
+
                             <div>
                                 <iframe height="{{ entry.fields.codepenOptions[0] }}" scrolling="no" ng-src="{{ entry.fields.codepenOptions[1] }}" frameborder="no" allowtransparency="true" allowfullscreen style="width: 100%">
                                 </iframe>
