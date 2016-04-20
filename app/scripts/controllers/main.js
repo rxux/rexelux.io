@@ -16,7 +16,7 @@ angular.module('rexeluxioApp')
         // Success handler
           function(response){
               var entries = response.data.items;
-              console.log(entries);
+              //console.log(entries);
               $scope.entries = entries;
           },
           // Error handler

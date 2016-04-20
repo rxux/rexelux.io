@@ -16,6 +16,64 @@
 	<div class="container">
 		<div class="row" ui-view>
 
+			<style>
+				.typeahead-demo .custom-popup-wrapper {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					z-index: 1000;
+					display: none;
+					background-color: #f9f9f9;
+				}
+
+				.typeahead-demo .custom-popup-wrapper > .message {
+					padding: 10px 20px;
+					border-bottom: 1px solid #ddd;
+					color: #868686;
+				}
+
+				.typeahead-demo .custom-popup-wrapper > .dropdown-menu {
+					position: static;
+					float: none;
+					display: block;
+					min-width: 160px;
+					background-color: transparent;
+					border: none;
+					border-radius: 0;
+					box-shadow: none;
+				}
+			</style>
+
+			<script type="text/ng-template" id="customPopupTemplate.html">
+				<div class="custom-popup-wrapper"
+					 ng-style="{top: position().top+'px', left: position().left+'px'}"
+					 style="display: block;"
+					 ng-show="isOpen() && !moveInProgress"
+					 aria-hidden="{{!isOpen()}}">
+					<p class="message">select location from drop down.</p>
+
+					<ul class="dropdown-menu" role="listbox">
+						<li ng-repeat="match in matches track by $index" ng-class="{active: isActive($index) }"
+							ng-mouseenter="selectActive($index)" ng-click="selectMatch($index)" role="option" id="{{::match.id}}">
+							<div uib-typeahead-match index="$index" match="match" query="query" template-url="templateUrl"></div>
+						</li>
+					</ul>
+				</div>
+			</script>
+
+			<div class='container-fluid typeahead-demo' ng-controller="TypeaheadController">
+
+				<input type="text" ng-model="customPopupSelected" placeholder="What are you looking for?"
+					   uib-typeahead="entry as entry.fields.name for entry in entries | filter:$viewValue"
+					   typeahead-popup-template-url="customPopupTemplate.html" class="form-control">
+				<br>
+				<pre>Model: {{customPopupSelected | json}}</pre>
+			</div>
+			<br>
+			<br>
+
+
+
             <div class="list-group">
 				<span ng-repeat="entry in entries" ng-if="entry.sys.contentType.sys.id == 'config'">
                     <span ng-repeat="bucket in entry.fields.buckets | orderBy:'fields.buckets.weight'">

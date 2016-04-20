@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name rexeluxioApp.controller:MainCtrl
+ * @name rexeluxioApp.controller:footerCtrl
  * @description
- * # MainCtrl
+ * # FooterCtrl
  * Controller of the rexeluxioApp
  */
 angular.module('rexeluxioApp')
