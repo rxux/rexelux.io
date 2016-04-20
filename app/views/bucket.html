@@ -1,0 +1,25 @@
+<div class="container-fluid bucket-page" ui-view>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>{{ whichBucket | underscoreless }}</h1>
+
+
+                    <ul class="list-unstyled">
+                        <span ng-repeat="entry in entries" ng-if="entry.sys.contentType.sys.id == 'config'">
+                            <span ng-repeat="subBucket in entry.fields.nav.navjson.buckets[0]">
+                                <span ng-if="subBucket.name == whichBucket">
+                                    <li ng-repeat="sub in subBucket.subsections">
+                                        <a ui-sref="bucketDetail({bucketName:whichBucket, subBucketName: sub })">{{sub | underscoreless }}</a>
+                                    </li>
+                                </span>
+                            </span>
+                        </span>
+                    </ul>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

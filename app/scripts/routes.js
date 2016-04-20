@@ -128,6 +128,39 @@ angular.module('rexeluxioApp')
             }
         })
 
+        .state('api', {
+            url: '/api',
+            templateUrl: 'views/partials/api.html',
+            controller: 'MainController',
+            ncyBreadcrumb: {
+                label: 'api',
+                parent: 'home'
+            }
+
+        })
+
+        .state('bucketName', {
+            url: '/{bucketName}',
+            templateUrl: 'views/bucket.html',
+            controller: 'BucketController',
+            ncyBreadcrumb: {
+                label: '{{whichBucket | underscoreless}}',
+                parent: 'home'
+            },
+    
+        })
+
+        .state('bucketDetail', {
+            url: '/{bucketName}/{subBucketName}',
+            templateUrl: 'views/subBucket.html',
+            controller: 'BucketController',
+            ncyBreadcrumb: {
+                label: '{{whichSubBucket | underscoreless}}',
+                parent: 'bucketName'
+            },
+
+        })
+
         .state('categories', {
             url: '/categories',
             templateUrl: 'views/categories.html',
@@ -135,7 +168,7 @@ angular.module('rexeluxioApp')
             ncyBreadcrumb: {
                 label: 'categories',
                 parent: 'home'
-            },
+            }
 
         })
 

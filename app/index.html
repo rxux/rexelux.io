@@ -29,7 +29,7 @@
       <div class="page-content" >
         <div ncy-breadcrumb ng-show='showBreadcrumbs'></div>
         <div class="wrapper" ui-view></div>
-        <ng-include src="'views/partials/footer.html'"></ng-include>
+        <!--<ng-include src="'views/partials/footer.html'"></ng-include>-->
         <ng-include src="'views/partials/google_analytics.html'"></ng-include>
       </div>
 
@@ -76,6 +76,7 @@
       <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
 
+        <script src="scripts/controllers/bucket.js"></script>
         <script src="scripts/controllers/category.js"></script>
         <script src="scripts/controllers/styles.js"></script>
         <script src="scripts/controllers/style.js"></script>

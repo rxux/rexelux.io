@@ -54,6 +54,11 @@ angular.module('rexeluxioApp', [
             return $sce.trustAsResourceUrl(url);
         };
     })
+    .filter('underscoreless', function () {
+        return function (input) {
+            return input.replace(/_/g, ' ');
+        };
+    })
   .run([
     '$rootScope','$location','$state','$stateParams',/*'$templateCache',*/
     function (

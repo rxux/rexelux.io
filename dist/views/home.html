@@ -14,40 +14,53 @@
 
 <div class="container-fluid categories">
 	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-4 text-center category">
-				<div class="cat-img">
-					<img ng-src="https://s3-us-west-2.amazonaws.com/rxcdn/styleguide/images/cat_patterns.png" alt="Patterns Category">
-				</div>
-				<h2>Pattern Library</h2>
-				<p>
-					A set of common UI elements that Lorem ipsum setting the lorem ipsum lorem
-					for lorem customer experience that is simple, elegant and lorem ipsum.
-				</p>
-				<a ui-sref="categories.catDetail({catName: 'Patterns', subCatName: 'Forms' })" class="btn">View</a>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4 text-center category">
-				<div class="cat-img">
-					<img ng-src="https://s3-us-west-2.amazonaws.com/rxcdn/styleguide/images/cat_components.png" alt="Components Category">
-				</div>
-				<h2>Components</h2>
-				<p>
-					A set of common UI elements that Lorem ipsum setting the lorem ipsum lorem
-					for lorem customer experience that is simple, elegant and lorem ipsum.
-				</p>
-				<a ui-sref="categories.catDetail({catName: 'Components', subCatName: '' })" class="btn">View</a>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4 text-center category">
-				<div class="cat-img">
-					<img ng-src="https://s3-us-west-2.amazonaws.com/rxcdn/styleguide/images/cat_brands.png" alt="Brands Category">
-				</div>
-				<h2>Branding</h2>
-				<p>
-					A set of common UI elements that Lorem ipsum setting the lorem ipsum lorem
-					for lorem customer experience that is simple, elegant and lorem ipsum.
-				</p>
-				<a ui-sref="categories.catDetail({catName: 'Brands', subCatName: 'Rexel' })" class="btn">View</a>
-			</div>
+		<div class="row" ui-view>
+
+            <div class="list-group">
+				<span ng-repeat="entry in entries" ng-if="entry.sys.contentType.sys.id == 'config'">
+                    <span ng-repeat="bucket in entry.fields.buckets | orderBy:'fields.buckets.weight'">
+                        <button type="button" class="list-group-item" ui-sref="bucketName({bucketName: bucket})">
+                            {{ bucket }}
+                        </button>
+                    </span>
+				</span>
+            </div>
+			<!--<div class="col-xs-12 col-sm-6 col-md-4 text-center category">-->
+				<!--<div class="cat-img">-->
+					<!--<img ng-src="https://s3-us-west-2.amazonaws.com/rxcdn/styleguide/images/cat_patterns.png"-->
+						 <!--alt="Patterns Category">-->
+				<!--</div>-->
+				<!--<h2>Pattern Library</h2>-->
+				<!--<p>-->
+					<!--A set of common UI elements that Lorem ipsum setting the lorem ipsum lorem-->
+					<!--for lorem customer experience that is simple, elegant and lorem ipsum.-->
+				<!--</p>-->
+				<!--<a ui-sref="categories.catDetail({catName: 'Patterns', subCatName: 'Forms' })"-->
+				   <!--class="btn">View</a>-->
+			<!--</div>-->
+			<!--<div class="col-xs-12 col-sm-6 col-md-4 text-center category">-->
+				<!--<div class="cat-img">-->
+					<!--<img ng-src="https://s3-us-west-2.amazonaws.com/rxcdn/styleguide/images/cat_components.png"-->
+						 <!--alt="Components Category">-->
+				<!--</div>-->
+				<!--<h2>Components</h2>-->
+				<!--<p>-->
+					<!--A set of common UI elements that Lorem ipsum setting the lorem ipsum lorem-->
+					<!--for lorem customer experience that is simple, elegant and lorem ipsum.-->
+				<!--</p>-->
+				<!--<a ui-sref="categories.catDetail({catName: 'Components', subCatName: '' })" class="btn">View</a>-->
+			<!--</div>-->
+			<!--<div class="col-xs-12 col-sm-6 col-md-4 text-center category">-->
+				<!--<div class="cat-img">-->
+					<!--<img ng-src="https://s3-us-west-2.amazonaws.com/rxcdn/styleguide/images/cat_brands.png" alt="Brands Category">-->
+				<!--</div>-->
+				<!--<h2>Branding</h2>-->
+				<!--<p>-->
+					<!--A set of common UI elements that Lorem ipsum setting the lorem ipsum lorem-->
+					<!--for lorem customer experience that is simple, elegant and lorem ipsum.-->
+				<!--</p>-->
+				<!--<a ui-sref="categories.catDetail({catName: 'Brands', subCatName: 'Rexel' })" class="btn">View</a>-->
+			<!--</div>-->
 		</div>
 	</div>
 </div>
