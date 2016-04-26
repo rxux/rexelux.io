@@ -1,6 +1,6 @@
 <nav id="menu" mmenu>
 
-    <ul id="mmenu-list">
+    <ul ng-show="contentLoaded" id="mmenu-list">
         <li><a ui-sref="home">Home</a></li>
         <li ng-repeat="category in entries | orderBy:'fields.weight' | lowercase"
             ng-if="category.sys.contentType.sys.id == 'category'">

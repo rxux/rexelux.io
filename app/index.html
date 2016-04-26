@@ -13,13 +13,17 @@
     <link rel="stylesheet" href="bower_components/highlightjs/styles/default.css" />
     <!-- endbower -->
     <!-- endbuild -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.3/css/jquery.mmenu.all.min.css">
+    <link type="text/css" rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.3/extensions/widescreen/jquery.mmenu.widescreen.min.css" media="all and (min-width: 1500px)" />
 
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/overrides.css">
     <!-- endbuild -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.3/css/jquery.mmenu.all.min.css">
+
+
+
 
     <base href="/">
   </head>
@@ -27,7 +31,6 @@
       <ng-include src="'views/partials/mmenu.html'"></ng-include>
       <ng-include src="'views/partials/header.html'"></ng-include>
       <div class="page-content" >
-        <div ncy-breadcrumb ng-show='showBreadcrumbs'></div>
         <div class="wrapper" ui-view></div>
         <!--<ng-include src="'views/partials/footer.html'"></ng-include>-->
         <ng-include src="'views/partials/google_analytics.html'"></ng-include>

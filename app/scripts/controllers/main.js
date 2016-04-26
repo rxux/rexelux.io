@@ -13,7 +13,7 @@ angular.module('rexeluxioApp')
     //$scope.currentPath = $location.path();
 
       contentful.entries().then(
-        // Success handler
+          // Success handler
           function(response){
               var entries = response.data.items;
               //console.log(entries);

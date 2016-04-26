@@ -144,7 +144,7 @@ angular.module('rexeluxioApp')
             templateUrl: 'views/bucket.html',
             controller: 'BucketController',
             ncyBreadcrumb: {
-                label: '{{whichBucket | underscoreless}}',
+                label: '{{whichBucket | underscoreless | capitalize:true}}',
                 parent: 'home'
             },
     
@@ -155,7 +155,7 @@ angular.module('rexeluxioApp')
             templateUrl: 'views/subBucket.html',
             controller: 'BucketController',
             ncyBreadcrumb: {
-                label: '{{whichSubBucket | underscoreless}}',
+                label: '{{whichSubBucket | underscoreless | capitalize:true}}',
                 parent: 'bucketName'
             },
 
@@ -177,7 +177,7 @@ angular.module('rexeluxioApp')
             templateUrl: 'views/category_no_tabs.html',
             controller: 'CategoryController',
             ncyBreadcrumb: {
-                label: '{{whichCat}}'
+                label: '{{whichCat | capitalize:true}}'
             },
 
         })
@@ -187,7 +187,7 @@ angular.module('rexeluxioApp')
             templateUrl: 'views/category.html',
             controller: 'CategoryController',
             ncyBreadcrumb: {
-                label: '{{whichSubCat}}',
+                label: '{{whichSubCat | capitalize:true}}',
                 parent: 'categories.catName'
             },
 
@@ -208,7 +208,7 @@ angular.module('rexeluxioApp')
             templateUrl: 'views/style.html',
             controller: 'StyleController',
             ncyBreadcrumb: {
-              label: '{{whichStyle}}'
+              label: '{{whichStyle | capitalize:true}}'
             }
         });
 

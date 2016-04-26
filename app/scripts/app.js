@@ -59,6 +59,12 @@ angular.module('rexeluxioApp', [
             return input.replace(/_/g, ' ');
         };
     })
+    .filter('capitalize', function() {
+        return function(input, all) {
+            var reg = (all) ? /([^\W_]+[^\s-]*) */g : /([^\W_]+[^\s-]*)/;
+            return (!!input) ? input.replace(reg, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}) : '';
+        }
+    })
   .run([
     '$rootScope','$location','$state','$stateParams',/*'$templateCache',*/
     function (
@@ -74,22 +80,24 @@ angular.module('rexeluxioApp', [
             };
         });
     }])
-  .directive('mmenu', function() {
+  .directive('mmenu', function($timeout) {
         return {
             scope: true,
             restrict: 'A',
-            link: function ($scope, element, attrs) {
-                $scope.$watch('entries', function() {
-                    $(element).mmenu({});
-                })
+            link: function ($scope, element) {
+                $timeout(function() {
+                        $(element).mmenu({
+                            extensions: ["widescreen"]
+                        })
+                }, 0);
+                $timeout(function() {
+                    $scope.contentLoaded = true;
+                }, 0);
+
 
             }
         }
     })
-
-
-
-
   .directive('hamburger', function() {
     return {
         restrict: 'A',
